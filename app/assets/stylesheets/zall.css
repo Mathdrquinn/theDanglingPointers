@@ -1,0 +1,18 @@
+body {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.navbar, .navbar-inner {
+  border-radius:0px;
+}
+#appTitle {
+  font-size:250%;
+  float:right;
+  margin-top: 17px;
+}
+@media (max-width: 767px) {
+  body {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}

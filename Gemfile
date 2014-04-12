@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 gem 'devise'
 gem 'carrierwave'
+gem "font-awesome-rails"
 # gem 'devise', :github => 'plataformatec/devise', :branch => 'rails4'
 
 # Use postgresql as the database for Active Record
