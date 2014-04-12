@@ -11,7 +11,7 @@
     <div class="navbar-inner">
       <a class="brand" href="javascript:window.history.back()"><i class="fa fa-arrow-circle-o-left fa-3x"></i></a>
       <a class="brand" href="/"><i class="fa fa-home fa-3x"></i></a>
-      <div class="brand" id='appTitle'>StoryCorps</div>
+      <div class="brand" id='appTitle'>VStoryCorps</div>
 <!--       <ul class="nav">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="#">Link</a></li>
@@ -29,7 +29,7 @@
   <% if user_signed_in? %>
     <a href="/users/sign_out" data-method="delete" rel="nofollow">Logout</a>
   <% end %>
-  
+
   <%= yield %>
   </div>
 </body>

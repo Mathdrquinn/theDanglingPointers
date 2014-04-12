@@ -12,7 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.mobile-1.4.2.min
 //= require jquery.jplayer
 //= require turbolinks
 //= require_tree .
-//= require jquery.mobile
