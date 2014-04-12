@@ -10,7 +10,7 @@ Landstorycorps::Application.routes.draw do
   root 'static_pages#index'
 
   get 'location/:lat/:long' => 'stories#location_stories'
-  
+
   get 'stories/new/:lat/:long' => 'stories#new'
 
   # Example of regular route:

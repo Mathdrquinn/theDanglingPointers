@@ -1,17 +1,11 @@
 <p id="notice"><%= notice %></p>
+<div class="row-fluid">
+  <div class="span12">
+    <h3>
+      <%= link_to 'Edit', edit_story_path(@story) %>
+      <%= @story.title %>
+    </h3>
 
-<p>
-  <strong>Title:</strong>
-  <%= @story.title %>
-</p>
-
-<%= audio_tag(@story.storyfile.url , autoplay: true, controls: true) %>
-
-<%= link_to 'Edit', edit_story_path(@story) %> |
-<%= link_to 'Back', stories_path %>
-
-
-<!-- <audio controls>
-  <source src="@story.storyfile.url" type="audio/wav">
-Your browser does not support the audio element.
-</audio> -->
+    <%= video_tag(@story.storyfile.url , autoplay: true, controls: true, id: "vidPlayer") %>
+  </div>
+</div>

@@ -38,7 +38,7 @@ class StoriesController < ApplicationController
   end
 
   def audio
-    
+
   end
 
   # POST /stories
@@ -56,7 +56,7 @@ class StoriesController < ApplicationController
 # u.avatar.current_path # => 'path/to/file.png'
 # u.avatar.identifier # => 'file.png'
 
-    respond_to do |format|
+    respond_to  do |format|
       if @story.save
         format.html { redirect_to :controller => 'stories', :action => 'location_stories', :lat => @story.latitude, :long => @story.longitude, notice: 'Story was successfully created.' }
         format.json { render action: 'show', status: :created, location: @story }
@@ -84,9 +84,11 @@ class StoriesController < ApplicationController
   # DELETE /stories/1
   # DELETE /stories/1.json
   def destroy
+    lat = @story.latitude
+    long = @story.longitude
     @story.destroy
     respond_to do |format|
-      format.html { redirect_to stories_url }
+      format.html { redirect_to "/location/#{lat}/#{long}" }
       format.json { head :no_content }
     end
   end
