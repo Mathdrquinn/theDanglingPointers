@@ -1,7 +1,11 @@
 source 'https://rubygems.org'
 
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
+gem 'devise'
+gem 'carrierwave'
+# gem 'devise', :github => 'plataformatec/devise', :branch => 'rails4'
 
 # Use postgresql as the database for Active Record
 gem 'pg'

@@ -1,0 +1,22 @@
+<h2>Location Title</h2>
+<p>
+  location description.  this is the description of a location.
+</p>
+<%= link_to "Back To Locations", root_path %>
+<%= link_to "Add New Story", "/stories/new/#{@lat}/#{@long}"%>
+
+<h3>My Stories</h3>
+
+<ul>
+  <% @stories.each do |story| %>
+  <li><%= story.title  %></li>
+  <% end %>
+</ul>
+<h3>Other People's Stories</h3>
+<ul>
+  <li>this</li>
+  <li>is</li>
+  <li>a</li>
+  <li>story</li>
+  <li>list</li>
+</ul>
