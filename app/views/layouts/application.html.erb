@@ -29,6 +29,7 @@
   <% if user_signed_in? %>
     <a href="/users/sign_out" data-method="delete" rel="nofollow">Logout</a>
   <% end %>
+  
   <%= yield %>
   </div>
 </body>

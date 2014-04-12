@@ -15,3 +15,4 @@
 //= require jquery.jplayer
 //= require turbolinks
 //= require_tree .
+//= require jquery.mobile
