@@ -12,6 +12,8 @@
  *= require bootstrap.min
  *= require bootstrap-responsive.min
  *= require zall
+ *= require jquery.mobile-1.4.2.min
  *= require_self
  *= require_tree .
+
  */
