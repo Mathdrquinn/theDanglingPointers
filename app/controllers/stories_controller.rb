@@ -37,6 +37,10 @@ class StoriesController < ApplicationController
   def edit
   end
 
+  def audio
+    
+  end
+
   # POST /stories
   # POST /stories.json
   def create
