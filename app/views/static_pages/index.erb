@@ -1,10 +1,23 @@
-<% if user_signed_in? %>
-  <ul>
-    <li><a href="/location/12/13">Location 1</a></li>
-    <li><a href="/location/14/15">Location 2</a></li>
-    <li><a href="/location/16/17">Location 3</a></li>
-  </ul>
-<% else %>
-  <a href="/users/sign_in" class='btn btn-success'>Sign In</a>
-  <a href="/users/sign_up" class='btn btn-info'>Sign Up</a>
-<% end %>
+<div class="row-fluid">
+  <div class="span12">
+      <!--Sidebar content-->
+    <% if user_signed_in? %>
+      <ul>
+        <li><a href="/location/12/13">Location 1</a></li>
+        <li><a href="/location/14/15">Location 2</a></li>
+        <li><a href="/location/16/17">Location 3</a></li>
+      </ul>
+    <% else %>
+      <div class="hero-unit text-center">
+        <h1>Welcome</h1>
+        <br>
+        <br>
+        <div class="btn-group">
+          <a href="/users/sign_in" class='btn btn-success btn-large'>Sign In</a>
+
+          <a href="/users/sign_up" class='btn btn-info btn-large'>Sign Up</a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

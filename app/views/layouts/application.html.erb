@@ -7,16 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<% if notice %>
-  <p class="alert alert-success"><%= notice %></p>
-<% end %>
-<% if alert %>
-  <p class="alert alert-danger"><%= alert %></p>
-<% end %>
-<% if user_signed_in? %>
-  <a href="/users/sign_out" data-method="delete" rel="nofollow">Logout</a>
-<% end %>
-<%= yield %>
-
+  <div class="container-fluid">
+  <% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+  <% end %>
+  <% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+  <% end %>
+  <% if user_signed_in? %>
+    <a href="/users/sign_out" data-method="delete" rel="nofollow">Logout</a>
+  <% end %>
+  <%= yield %>
+  </div>
 </body>
 </html>
