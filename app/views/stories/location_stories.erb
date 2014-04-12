@@ -2,16 +2,20 @@
 <p>
   location description.  this is the description of a location.
 </p>
-<%= link_to "Back To Locations", root_path %>
-<%= link_to "Add New Story", "/stories/new/#{@lat}/#{@long}"%>
 
-<h3>My Stories</h3>
+<h1>
+  <%= link_to "/stories/new/#{@lat}/#{@long}" do %>
+    <i class="fa fa-plus-circle fa-2x"></i>
+  <% end %>
+  My Stories
+</h1>
 
 <ul>
   <% @stories.each do |story| %>
-  <li><%= story.title  %></li>
+    <li><%= link_to story.title, "/stories/#{story.id}"%></li>
   <% end %>
 </ul>
+
 <h3>Other People's Stories</h3>
 <ul>
   <li>this</li>
